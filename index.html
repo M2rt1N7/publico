@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Tema: Web Storage - localstorage y sessionstorage
+alumno: Federico Martín
+fecha: 26-01-2021
+-->
+
+<head>
+  <title>HTML5 - WebStorage - sessionStorage</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="26ene-1DAM-login.css">
+</head>
+
+
+<body>
+
+  <!--<a href="18-ene-sessionstorage-2.html">IR a  pag. 2</a>-->
+<div id="div1">
+  <form name="miFormulario" onSubmit="return ingresar()">
+    <!--<label for="apellido">Apellido:</label><br>-->
+    <input type="text" id="usr" name="usuario" maxlength="10" required><br>
+    <input type="submit" value="Entrar">
+  </form>
+</div>
+  <!-- creamos un elemento vacío para luego poner allí el resultado
+			de nuestro script -->
+  <br />
+  <!--<div id="mensaje"></div>-->
+  <script>
+
+    // seccion de codigo javascript
+    // Valida que el browser lo permita
+    // document.getElementById("mensaje").innerHTML = sessionStorage.getItem("apellido");
+
+    function ingresar() {
+      if (typeof(Storage) !== "undefined") {
+        // Almacena un valor usando el método setItem del objeto localStorage
+        var x = document.forms["miFormulario"]["usuario"].value;
+        sessionStorage.setItem("usuario", x);
+        // Recupera el valor usando el método getItem del objeto localStorage
+        // document.getElementById("mensaje").innerHTML = sessionStorage.getItem("apellido");
+      } else {
+        alert("Este navegador no soporta web storage...");
+      }
+      window.location.replace("26ene-1DAM-logout.html");
+      return false;
+    }
+  </script>
+</body>
+
+</html>
