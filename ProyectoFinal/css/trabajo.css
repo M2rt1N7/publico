@@ -1,0 +1,443 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.marco {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 120px 0px auto 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.encabezado {
+  border-style: solid;
+  border-color: #000000;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.contenido {
+  background-color: #FFFFFF;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
+}
+
+.pieDePagina {
+  border-top: 1px solid black;
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 1;
+  text-align: center;
+  background-color: #FFFFFF;
+  font-family: monospace;
+  padding-top: 0.5%;
+  pos
+}
+
+.menu {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  font-family: cambria;
+  text-align: justify;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 30px;
+  text-align: center;
+}
+
+nav li {
+  margin-top: 1%;
+  display: inline-block;
+  background-color: #000000;
+  margin-left: 10%;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+nav li:hover {
+  color: #A98307;
+}
+
+#ImagenFondo {
+  background-image: url(imagenes/DiStefano.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#ImagenFondo2{
+  background-image: url(imagenes/FotoHistorica.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#ImagenFondo3{
+  background-image: url(imagenes/FotoHistorica2.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#ImagenFondo4{
+  background-image: url(imagenes/Zidane.jpeg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bloque1 {
+  margin-top: 5%;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #A98307;
+}
+
+.Historia {
+  height: auto;
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 5%;
+  right: auto;
+}
+
+.Historia2{
+  height: auto;
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 5%;
+  right: auto;
+}
+
+.FotoNoticia{
+  padding-left: 10%;
+}
+
+.RealLogo {
+  float: left;
+  width: 4%;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.EmiratesLogo {
+  width: 3%;
+  float: right;
+  margin-right: 25px;
+}
+
+.AdidasLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.AudiLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.NiveaLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.MahouLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.MovistarLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 3px;
+}
+
+.EALogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.PSLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.SanitasLogo {
+  width: 4%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.CocaColaLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 8px;
+}
+
+.PalladiumLogo {
+  width: 5%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 8px;
+}
+
+.LiberBankLogo {
+  width: 6%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 8px;
+}
+
+.SolanDeCabrasLogo {
+  width: 3%;
+  float: right;
+  margin-left: 25px;
+  margin-right: 220px;
+}
+
+.MejorClubSXX {
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+}
+
+.CopaEuropa {
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.MundialClubes {
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.SupercopaEuropa {
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.CopaUEFA{
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.LigaEspañola{
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.CopaDelRey{
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.SupercopaEspaña{
+  width: 50%;
+  height: auto;
+  padding-left: 25%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.infoCentro {
+  padding-right: 30px;
+  height: auto;
+  color: black;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.elegirDamDaw {
+  height: auto;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.trofeo1 {
+  width: 50%;
+  height: auto;
+  padding-top: 5%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.trofeo2 {
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.trofeo3 {
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.trofeo4 {
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.trofeo5{
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.trofeo6{
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.trofeo7{
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.trofeo8{
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  padding-left: 1%;
+  padding-right: 25%;
+  color: #A98307;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-width:600px) {
+  .lado {
+    display: none;
+  }
+
+  .contenido {
+    grid-column: 1 / span 2;
+  }
+
+  .bloque1 {
+    width: 100%;
+    display: block;
+  }
+
+  .bloque2 {
+    width: 100%;
+    display: block;
+  }
+
+  .infoPersonal {
+    width: 100%;
+  }
+
+  .imagenCenec {
+    width: 100%;
+  }
+}
