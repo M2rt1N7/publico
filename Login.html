@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+autor: Federico Martin Muñoz
+fecha: Marzo 2021
+-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Titulo en Etiqueta del Navegador</title>
+
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+
+	<!-- una hoja de estilos externa-->
+	<link href="trabajo.css" rel="stylesheet" />
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.cs" rel="stylesheet" />
+
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="clicks.js"> </script>
+
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	<link rel="shortcut icon" type="image/jpg" href="imagenes/logo.ico" />
+</head>
+
+
+<body>
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+	<div id="id01" class="modal">
+
+	  <form class="modal-content animate" action="/action_page.php" method="post">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      <img src="imagenes/RealMadridLogo.png" alt="Avatar" class="avatar">
+	    </div>
+
+	    <div class="container">
+	      <label for="uname"><b>Usuario</b></label>
+	      <input type="text" placeholder="Introduce Usuario" name="uname" required>
+
+	      <label for="psw"><b>Contraseña</b></label>
+	      <input type="password" placeholder="Introduce Contraseña" name="psw" required>
+
+	      <button type="submit">Login</button>
+	    </div>
+	  </form>
+	</div>
+</body>
+
+</html>
