@@ -48,11 +48,30 @@ fecha: Marzo 2021
             <li onclick="onClick()"><a href="#">Historia</a></li>
             <li><a href="palmares.html">Palmarés</a></li>
             <li><a href="actualidad.html">Actualidad</a></li>
-            <li><a href="#">Socios</a></li>
+            <li><a href="plantilla.html">Plantilla</a></li>
             <li><a href="estadioBernabeu.html">Estadio Bernabéu</a></li>
-            <li ><a href="Login.html">Log in</a></li>
+            <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
           </ul>
         </nav>
+      </div>
+      <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="imagenes/RealMadridLogo.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Usuario</b></label>
+            <input type="text" placeholder="Introduce Usuario" name="uname" required>
+
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Introduce Contraseña" name="psw" required>
+
+            <button type="submit">Login</button>
+          </div>
+        </form>
       </div>
     </div>
     <div class="contenido">

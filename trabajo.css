@@ -40,7 +40,12 @@ p {
   background-color: #FFFFFF;
   font-family: monospace;
   padding-top: 0.5%;
-  padding-right:15%
+  padding-bottom: 0.5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  box-sizing:border-box;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .menu {
@@ -67,7 +72,7 @@ nav li {
 }
 
 nav li:hover {
-  color: #A98307;
+  color: #C672A5;
 }
 
 #ImagenFondo {
@@ -144,6 +149,31 @@ nav li:hover {
   position: relative;
 }
 
+.fotoPlantilla{
+  /*display: table-row-group;*/
+  border-bottom:2px solid grey;
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.titulosPlantilla{
+  font-size: 25px;
+  font-family: cambria;
+  color: #C672A5;
+}
+
+.fotoJugador{
+  width: 24.77%;
+  padding: 0px;
+  margin: 0px;
+  border: 2px solid;
+  border-radius: 0.5em;
+  border-color: #C672A5;
+  box-sizing: border-box;
+  /*object-fit: contain;*/
+  height: auto;
+}
+
 .Articulo{
 width: 100%;
 height: 100%;
@@ -162,96 +192,105 @@ text-align: center;
 }
 
 .EmiratesLogo {
-  width: 3%;
-  float: right;
-  margin-right: 25px;
+  width: 3.5%;
+  height: auto;
+  margin-left: 25px;
+  object-fit: contain;
 }
 
 .AdidasLogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
+  object-fit: contain;
 }
 
 .AudiLogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
+  object-fit: contain;
 }
 
 .NiveaLogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
+  object-fit: contain;
 }
 
 .MahouLogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
+  object-fit: contain;
 }
 
 .MovistarLogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 3px;
+  object-fit: contain;
 }
 
 .EALogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
+  object-fit: contain;
 }
 
 .PSLogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
+  object-fit: contain;
 }
 
 .SanitasLogo {
-  width: 4%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
+  object-fit: contain;
 }
 
 .CocaColaLogo {
-  width: 3%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 8px;
+  object-fit: contain;
 }
 
 .PalladiumLogo {
-  width: 5%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 8px;
+  object-fit: contain;
 }
 
 .LiberBankLogo {
-  width: 6%;
-  float: right;
+  width: 3.5%;
+  height: auto;
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 8px;
+  object-fit: contain;
 }
 
 .SolanDeCabrasLogo {
-  width: 3%;
-  float: right;
-  margin-left: 25px;
+  width: 3.5%;
+  height: auto;
+  margin-right: 25px;
+  object-fit: contain;
 }
 
 .MejorClubSXX {
@@ -406,11 +445,13 @@ text-align: center;
   text-align: justify;
 }
 
+
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.contenedorImagenes {
+  max-width: 70%;
   position: relative;
   margin: auto;
+  border-radius: 0.5em;
 }
 
 /* Next & previous buttons */
