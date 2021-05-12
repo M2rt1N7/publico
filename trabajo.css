@@ -167,7 +167,7 @@ nav li:hover {
   padding: 0px;
   margin: 0px;
   border: 2px solid;
-  border-radius: 0.2em;
+  border-radius: 1em;
   border-color: #CB538B;
   box-sizing: border-box;
   /*object-fit: contain;*/
@@ -464,9 +464,7 @@ text-align: center;
   max-width: 70%;
   position: relative;
   margin: auto;
-  border: 3px solid;
-  border-radius: 1em;
-  border-color: #CB538B;
+  border-radius: 2em;
 }
 
 /* Next & previous buttons */
@@ -514,18 +512,6 @@ text-align: center;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
