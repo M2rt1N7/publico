@@ -29,36 +29,60 @@ fecha: Marzo 2021
 
 	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="clicks.js"> </script>
+
 
 	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
-	<script src="12mayo-login-desconectar.js"></script>
+
 	<link rel="shortcut icon" type="image/jpg" href="imagenes/logo.ico" />
 </head>
 
 
-<body>
+<!--<body onload="controlar()">
 	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 	<div id="id01" class="modal">
 
-		<form class="modal-content animate" action="/action_page.php" method="post">
+		<form class="modal-content animate" method="POST" id="ingresar" name="miFormulario" onSubmit="return intentar()">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 				<img src="imagenes/RealMadridLogo.png" alt="Avatar" class="avatar">
 			</div>
 
 			<div class="container">
-				<label for="uname"><b>Usuario</b></label>
-				<input type="text" placeholder="Introduce Usuario" name="uname" required>
-
-				<label for="psw"><b>Contraseña</b></label>
-				<input type="password" placeholder="Introduce Contraseña" name="psw" required>
-
+				<label for="apellido">Usuario:</label>
+				<input type="text" id="usr" name="formUsuario" required><br>
+				<label for="apellido">Clave:</label>
+				<input type="text" id="clv" name="formClave" required><br>
+				<input type="submit" value="INGRESAR">
 				<button type="submit">Login</button>
+			</div>
+		</form>
+	</div>
+</body>-->
+
+<body >
+	<button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+	<button id="logout" onclick="logOut()" style="width:auto;">logOut</button>
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate" method="POST" id="ingresar" name="miFormulario" onSubmit="return intentar()">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<img src="imagenes/RealMadridLogo.png" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<label for="apellido">Usuario:</label>
+				<input type="text" id="usr" name="formUsuario" required><br>
+				<label for="apellido">Clave:</label>
+				<input type="text" id="clv" name="formClave" required><br>
+				<input type="submit" value="INGRESAR">
+				<button onclick="LeerXML()" type="submit">Login</button>
 			</div>
 		</form>
 	</div>
 </body>
 
+<script src="Scriptiniciarsesion.js"></script>
+<script src="login.js"></script>
 </html>
