@@ -61,7 +61,8 @@ fecha: Marzo 2021
             </li>
             <li>
               <a id="loginHeader" onclick="document.getElementById('id01').style.display='block'" >Login</a>
-              <a id="logoutHeader" onclick="logOut()">Logout</a>
+              <a id="logoutHeader" onclick="logOut()"><span id="conexionUsuario"></span>Logout</a>
+              
             </li>
           </ul>
         </nav>
@@ -76,12 +77,12 @@ fecha: Marzo 2021
 
           <div class="container">
             <label for="uname"><b>Usuario</b></label>
-            <input type="text" placeholder="Introduce Usuario" required>
+            <input  type="text" id="usr" placeholder="Introduce Usuario" required>
 
             <label for="psw"><b>Contraseña</b></label>
-            <input type="password" placeholder="Introduce Contraseña"required>
+            <input type="password" id="clv" placeholder="Introduce Contraseña"required>
 
-            <button type="submit">Login</button>
+            <button onclick="leerXML()" type="submit">Login</button>
           </div>
         </form>
       </div>

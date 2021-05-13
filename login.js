@@ -6,7 +6,7 @@ function leerXML() {
               miFuncion(this);
             }
           };
-          xhr.open("GET", "https://M2rt1N7.github.io/publico/ProyectoFinalWeb/registrados.xml", true);
+          xhr.open("GET", "https://sergiolt.github.io/TestFede/registrados.xml", true);
           xhr.send();
         }
 

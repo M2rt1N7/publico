@@ -668,6 +668,6 @@ span.psw {
   display: none;
 }
 #loginHeader{
-  display:block;
-  width: auto;
+  display:inline-block;
+
 }
