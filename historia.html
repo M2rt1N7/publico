@@ -24,7 +24,6 @@ fecha: Marzo 2021
   <link href="trabajo.css" rel="stylesheet" />
 
   <!-- una hoja de estilos personalizada-->
-  <link href="00-modelo.cs" rel="stylesheet" />
 
   <!-- iconos u otros elementos externos -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -61,8 +60,8 @@ fecha: Marzo 2021
               <a href="estadioBernabeu.html">Estadio Bernabéu</a>
             </li>
             <li>
-              <a id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
-              <a id="logout" onclick="logOut()" style="width:auto;">Logout</a>
+              <a id="loginHeader" onclick="document.getElementById('id01').style.display='block'" >Login</a>
+              <a id="logoutHeader" onclick="logOut()">Logout</a>
             </li>
           </ul>
         </nav>
@@ -77,10 +76,10 @@ fecha: Marzo 2021
 
           <div class="container">
             <label for="uname"><b>Usuario</b></label>
-            <input type="text" placeholder="Introduce Usuario" name="uname" required>
+            <input type="text" placeholder="Introduce Usuario" required>
 
             <label for="psw"><b>Contraseña</b></label>
-            <input type="password" placeholder="Introduce Contraseña" name="psw" required>
+            <input type="password" placeholder="Introduce Contraseña"required>
 
             <button type="submit">Login</button>
           </div>

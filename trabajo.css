@@ -664,6 +664,10 @@ span.psw {
 
 }
 
-#logout{
+#logoutHeader{
   display: none;
+}
+#loginHeader{
+  display:block;
+  width: auto;
 }

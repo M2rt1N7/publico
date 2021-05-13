@@ -61,8 +61,7 @@ fecha: Marzo 2021
 </body>-->
 
 <body >
-	<button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-	<button id="logout" onclick="logOut()" style="width:auto;">logOut</button>
+	<button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 	<div id="id01" class="modal">
 
 		<form class="modal-content animate" method="POST" id="ingresar" name="miFormulario" onSubmit="return intentar()">
@@ -77,12 +76,12 @@ fecha: Marzo 2021
 				<label for="apellido">Clave:</label>
 				<input type="text" id="clv" name="formClave" required><br>
 				<input type="submit" value="INGRESAR">
-				<button onclick="LeerXML()" type="submit">Login</button>
+				<button onclick="leerXML()" type="submit">Login</button>
 			</div>
 		</form>
 	</div>
 </body>
 
-<script src="Scriptiniciarsesion.js"></script>
+<!--<script src="Scriptiniciarsesion.js"></script>-->
 <script src="login.js"></script>
 </html>

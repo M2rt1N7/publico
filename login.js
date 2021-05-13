@@ -35,6 +35,7 @@ function leerXML() {
               }
               if(checkingData==true){
                   alert("Bienvenido, "+ nombreUsuario)
+                  location.reload();
 
               }
               }
@@ -54,8 +55,8 @@ function leerXML() {
 
     function checking(){
       if(sessionStorage.getItem("usuario").length>0){
-        document.getElementById("login").style.display="none";
-        document.getElementById("logout").style.display="inline-block";
+        document.getElementById("loginHeader").style.display="none";
+        document.getElementById("logoutHeader").style.display="block";
         document.getElementById("conexionUsuario").innerHTML = sessionStorage.getItem("usuario");
       }
     }
