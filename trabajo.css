@@ -204,13 +204,6 @@ text-align: center;
 
 }
 
-.RealLogoTitulo{
-  display:flex;
-  margin: auto;
-  float: left;
-  width: 5px;
-}
-
 .RealLogo {
   display:flex;
   margin: auto;
