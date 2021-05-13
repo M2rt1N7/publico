@@ -56,6 +56,14 @@ p {
   text-align: justify;
 }
 
+#logoutHeader{
+  display: none;
+}
+#loginHeader{
+  display:inline-block;
+
+}
+
 nav a {
   text-decoration: none;
   color: inherit;
@@ -195,6 +203,14 @@ background-color: #CFCFCF;
 text-align: center;
 
 }
+
+.RealLogoTitulo{
+  display:flex;
+  margin: auto;
+  float: left;
+  width: 5px;
+}
+
 .RealLogo {
   display:flex;
   margin: auto;
@@ -661,13 +677,5 @@ span.psw {
 }
 
 @media screen and (max-width:600px) {
-
-}
-
-#logoutHeader{
-  display: none;
-}
-#loginHeader{
-  display:inline-block;
 
 }
