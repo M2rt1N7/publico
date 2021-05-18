@@ -1,0 +1,66 @@
+/*
+web o pagina:
+alumno:
+fecha:
+RECORDAR:
+en caso de conflictos se aplica el estilo que se define último,
+o sea al final de este archivo o en la misma pagina html
+
+Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
+
+*/
+
+body {
+  background: #000000;
+  font-family: monospace;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1060px;
+  background: #000;
+  overflow: hidden;
+  margin: 25px auto;
+  position: relative;
+  height: 70%;
+}
+.container:hover .background {
+  -webkit-transform: scale(0.8) translate(-70%, -60%);
+      -ms-transform: scale(0.8) translate(-70%, -60%);
+          transform: scale(0.6) translate(-70%, -60%);
+}
+.container:hover .front {
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.background {
+  top: 50%;
+  left: 50%;
+  width: 1211px;
+  height: 717px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+.front {
+  top: 50px;
+  bottom: 350px;
+  right: 27.8%;
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+          transform: scale(0.2);
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
