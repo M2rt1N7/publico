@@ -18,11 +18,9 @@ body {
 
 .container {
   width: 900px;
-  max-width: 1920px;
-  max-height: 821px;
   background: #000;
   overflow: hidden;
-  margin: 25px auto;
+  margin: 0px auto;
   position: relative;
   height: 600px;
 }
@@ -69,4 +67,64 @@ body {
 .botonDolly{
   width: 15%;
   border-radius: 5em;
+  background-color: #FFC300;
+
+}
+
+.image-wrap {
+  width: 100%;
+  height: 50vw;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrap img {
+  width: 900px;
+  height: 600px;
+  margin-left: 20%;
+  animation: move 25s ease;
+  /* Add infinite to loop. */
+
+  -ms-animation: move 25s ease;
+  -webkit-animation: move 25s ease;
+  -0-animation: move 25s ease;
+  -moz-animation: move 25s ease;
+  position: absolute;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.0);
+    /* Opera */
+
+    -moz-transform: scale(1.0);
+    /* Firefox */
+  }
+  100% {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.2);
+    /* Opera */
+
+    -moz-transform: scale(1.2);
+    /* Firefox */
+  }
 }
