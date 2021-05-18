@@ -120,6 +120,11 @@ nav li:hover {
   background-attachment: fixed;
 }
 
+.botonDolly{
+  width: 15%;
+  border-radius: 5em;
+}
+
 .bloque1 {
   margin-top: 5%;
   display: block;

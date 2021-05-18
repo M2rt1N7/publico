@@ -13,22 +13,23 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 body {
   background: #000000;
   font-family: monospace;
-  color: #ffffff;
+  color: #FFC300;
 }
 
 .container {
-  width: 100%;
-  max-width: 1060px;
+  width: 900px;
+  max-width: 1920px;
+  max-height: 821px;
   background: #000;
   overflow: hidden;
   margin: 25px auto;
   position: relative;
-  height: 70%;
+  height: 600px;
 }
 .container:hover .background {
-  -webkit-transform: scale(0.8) translate(-70%, -60%);
-      -ms-transform: scale(0.8) translate(-70%, -60%);
-          transform: scale(0.6) translate(-70%, -60%);
+  -webkit-transform: scale(0.9) translate(-60%, -50%);
+      -ms-transform: scale(0.9) translate(-60%, -50%);
+          transform: scale(0.9) translate(-60%, -50%);
 }
 .container:hover .front {
   -webkit-transform: scale(0.5);
@@ -38,13 +39,13 @@ body {
 
 .background {
   top: 50%;
-  left: 50%;
-  width: 1211px;
-  height: 717px;
+  left: 35%;
+  width: 1220px;
+  height: 721px;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -60%);
+      -ms-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
   -webkit-transform-origin: top left;
       -ms-transform-origin: top left;
           transform-origin: top left;
@@ -63,4 +64,9 @@ body {
           transform: scale(0.2);
   -webkit-transition: -webkit-transform 1s;
           transition: transform 1s;
+}
+
+.botonDolly{
+  width: 15%;
+  border-radius: 5em;
 }
