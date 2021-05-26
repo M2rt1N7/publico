@@ -325,6 +325,7 @@ text-align: center;
   width: 50%;
   height: auto;
   padding-left: 25%;
+  display: flex;
 }
 
 .CopaEuropa {
@@ -676,4 +677,704 @@ span.psw {
 
 @media screen and (max-width:600px) {
 
+}
+@media only screen
+and (min-width: 320px)
+and (max-width: 736px)
+{
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .marco {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 55px 0px auto 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .encabezado {
+    border-style: solid;
+    border-color: #101059;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .contenido {
+    background-color: #FFFFFF;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    overflow-y: auto;
+    text-align: justify;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .pieDePagina {
+    border-top: 0.5px solid #101059;
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+    text-align: center;
+    background-color: #FFFFFF;
+    font-family: monospace;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .menu {
+    background-color: #101059;
+    width: 100%;
+    height: 100%;
+    font-family: courier;
+    text-align: justify;
+  }
+
+  #logoutHeader{
+    display: none;
+  }
+  #loginHeader{
+    display:inline-block;
+
+  }
+
+  nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline-block;
+    background-color: #101059;
+    margin-left: 7%;
+    color: #FFFFFF;
+    padding-top: 12px;
+    width: auto;
+  }
+
+  nav li:hover {
+    color: #CB538B;
+  }
+
+  #ImagenFondo {
+    background-image: url(imagenes/DiStefano.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #ImagenFondo2{
+    background-image: url(imagenes/FotoHistorica.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #ImagenFondo3{
+    background-image: url(imagenes/FotoHistorica2.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #ImagenFondo4{
+    background-image: url(imagenes/Zidane.jpeg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .botonDolly{
+    width: 20%;
+    border-radius: 5em;
+  }
+
+  .bloque1 {
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #101059;
+  }
+
+  .Historia {
+    height: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 3%;
+    right: auto;
+  }
+
+  .Historia2{
+    height: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 3%;
+    right: auto;
+  }
+
+  .FotoNoticia{
+    background-image: url(RealMadridLogo.png);
+    position: relative;
+  }
+
+  .fotoPlantilla{
+    /*display: table-row-group;*/
+    box-sizing: border-box;
+    padding: 100px;
+  }
+
+  .titulosPlantilla{
+    font-size: 25px;
+    font-family: monospace;
+    color: #101059;
+  }
+
+  .fotoJugador{
+    width: 24.77%;
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid;
+    border-radius: 1em;
+    border-color: #CB538B;
+    box-sizing: border-box;
+    /*object-fit: contain;*/
+    height: auto;
+  }
+
+  .imagenSobreTexto{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    background: #CB538B;
+    width: 100%;
+    height: 15%;
+    padding: 3em;
+  }
+
+  .Articulo{
+  width: 100%;
+  height: 100%;
+  padding: 4%;
+  font-family: cambria;
+  color: #CB538B;
+  background-color: #CFCFCF;
+  text-align: center;
+
+  }
+
+  .RealLogo {
+    display:flex;
+    margin: auto;
+    float: left;
+    width: 35px;
+    margin-left: 50px;
+    margin-top: 3px;
+    padding-right: 3px;
+  }
+
+  .EmiratesLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    object-fit: contain;
+  }
+
+  .AdidasLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .AudiLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .NiveaLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .MahouLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .MovistarLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .EALogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .PSLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .SanitasLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .CocaColaLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .PalladiumLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .LiberBankLogo {
+    width: 3.5%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .SolanDeCabrasLogo {
+    width: 3.5%;
+    height: auto;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+
+  .MejorClubSXX {
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    display: block;
+  }
+
+  .CopaEuropa {
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    display: block;
+  }
+
+  .MundialClubes {
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    display: block;
+  }
+
+  .SupercopaEuropa {
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    display: block;
+  }
+
+  .CopaUEFA{
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    display: block;
+  }
+
+  .LigaEspañola{
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    display: block;
+  }
+
+  .CopaDelRey{
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    display: block;
+  }
+
+  .SupercopaEspaña{
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    display: block;
+  }
+
+  .trofeo1 {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  .trofeo2 {
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  .trofeo3 {
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  .trofeo4 {
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  .trofeo5{
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  .trofeo6{
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  .trofeo7{
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  .trofeo8{
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 25%;
+    color: #101059;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+  }
+
+  /* Slideshow container */
+  .contenedorImagenes {
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+    border-radius: 2em;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: #CB538B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 35px 0 12px 0;
+    position: relative;
+  }
+
+  img.avatar {
+    width: 20%;
+    border-radius: 40%;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  @media screen and (max-width:600px) {
+
+  }
 }

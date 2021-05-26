@@ -65,8 +65,7 @@ body {
 }
 
 .botonDolly{
-  width: 15%;
-  border-radius: 5em;
+  width: 15%;;
   background-color: #FFC300;
 
 }
@@ -77,6 +76,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+
 }
 
 .image-wrap img {
